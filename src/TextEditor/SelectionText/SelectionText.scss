@@ -1,0 +1,20 @@
+.selection {
+  &-text {
+    display: inline;
+    border: 1px dotted grey;
+    &_wrap {
+      display: inline;
+      position: relative;
+      padding: 15px 0;
+    }
+    &_type {
+      display: inline-block;
+      font-size: 12px;
+      position: absolute;
+      width: 300px;
+      top: 0;
+      left: 0;
+      margin: 0;
+    }
+  }
+}

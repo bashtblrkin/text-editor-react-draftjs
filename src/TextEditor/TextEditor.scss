@@ -1,0 +1,18 @@
+.text-editor {
+  border: 1px solid black;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.public-DraftEditor-content {
+  min-height: 100px;
+}
+
+.default-block {
+  min-height: 40px;
+}
+
+span[data-text="true"] {
+  line-height: 40px;
+}

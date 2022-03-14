@@ -1,0 +1,12 @@
+.tooltip {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 30px;
+  background-color: aliceblue;
+  z-index: 10;
+  & input {
+    width: 100%;
+    z-index: 20;
+  }
+}
