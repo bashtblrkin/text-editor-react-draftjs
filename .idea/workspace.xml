@@ -35,11 +35,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-draft-wysiwyg-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ASBC" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Users\baturin.i\Desktop\projects\text-editor\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReaderModeSettings">
@@ -61,7 +61,7 @@
       <workItem from="1645705022156" duration="8995000" />
       <workItem from="1645715722942" duration="952000" />
       <workItem from="1646036322451" duration="21411000" />
-      <workItem from="1646122253510" duration="96465000" />
+      <workItem from="1646122253510" duration="101662000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1647263925459</created>

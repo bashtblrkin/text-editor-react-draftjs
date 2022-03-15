@@ -2,6 +2,8 @@ import * as React from "react";
 import {useEditorApi} from "../TextEditor";
 import cn from "classnames";
 import {BlockType, InlineStyle} from "../TextEditor/config";
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 import "./ToolPanel.scss";
 
 const ToolPanel: React.FC = () => {
@@ -16,73 +18,59 @@ const ToolPanel: React.FC = () => {
     } = useEditorApi();
 
     return (
-        <div className="tool-panel">
-            <button
-                className={cn(
-                    "tool-panel__item",
-                    currentBlockType === BlockType.h1 && "tool-panel__item_active"
-                )}
+        <Stack direction="row" spacing={2}>
+            <Button
+                variant={`${currentBlockType === BlockType.h1 ? 'contained' : 'outlined'}`}
                 onMouseDown={(e) => {
                     e.preventDefault();
                     toggleBlockType(BlockType.h1);
                 }}
             >
                 Заголовок
-            </button>
-            <button
-                className={cn(
-                    "tool-panel__item",
-                    currentBlockType === BlockType.h2 && "tool-panel__item_active"
-                )}
+            </Button>
+            <Button
+                variant={`${currentBlockType === BlockType.h2 ? 'contained' : 'outlined'}`}
                 onMouseDown={(e) => {
                     e.preventDefault();
                     toggleBlockType(BlockType.h2);
                 }}
             >
                 Подзаголовок
-            </button>
-            <button
-                className={cn(
-                    "tool-panel__item",
-                    currentBlockType === BlockType.cite && "tool-panel__item_active"
-                )}
+            </Button>
+            <Button
+                variant={`${currentBlockType === BlockType.cite? 'contained' : 'outlined'}`}
                 onMouseDown={(e) => {
                     e.preventDefault();
                     toggleBlockType(BlockType.cite);
                 }}
             >
                 Сноска
-            </button>
-            <button
-                className={cn(
-                    "tool-panel__item",
-                    currentBlockType === BlockType.default && "tool-panel__item_active"
-                )}
+            </Button>
+            <Button
+                variant={`${currentBlockType === BlockType.default ? 'contained' : 'outlined'}`}
                 onMouseDown={(e) => {
                     e.preventDefault();
                     toggleBlockType(BlockType.default);
                 }}
             >
                 Простой
-            </button>
+            </Button>
 
             {Object.values(InlineStyle).map((v) => (
-                <button
+                <Button
+                    variant={`${hasInlineStyle(v) ? 'contained' : 'outlined'}`}
                     key={v}
-                    className={cn(
-                        "tool-panel__item",
-                        hasInlineStyle(v) && "tool-panel__item_active"
-                    )}
                     onMouseDown={(e) => {
                         e.preventDefault();
                         toggleInlineStyle(v);
                     }}
                 >
                     {v}
-                </button>
+                </Button>
             ))}
 
-            <button
+            <Button
+                variant="outlined"
                 className="tool-panel__item"
                 onClick={() => {
                     const url = prompt("URL:");
@@ -92,9 +80,10 @@ const ToolPanel: React.FC = () => {
                 }}
             >
                 LINK
-            </button>
+            </Button>
 
-            <button
+            <Button
+                variant="outlined"
                 className="tool-panel__item"
                 onClick={() => {
                     const type = prompt("Тип:");
@@ -104,17 +93,18 @@ const ToolPanel: React.FC = () => {
                 }}
             >
                 Добавить тип
-            </button>
+            </Button>
 
-            <button
+            <Button
+                variant="outlined"
                 className="tool-panel__item"
                 onClick={() => {
                     console.log(toHtml());
                 }}
             >
                 Print
-            </button>
-        </div>
+            </Button>
+        </Stack>
     );
 };
 

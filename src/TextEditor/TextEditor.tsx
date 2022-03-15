@@ -28,7 +28,6 @@ const TextEditor: React.FC<TextEditorProps> = ({className}) => {
 
             <div>
                 <Editor
-                    spellCheck
                     handleKeyCommand={editorApi.handleKeyCommand}
                     customStyleMap={CUSTOM_STYLE_MAP}
                     blockRenderMap={BLOCK_RENDER_MAP}
