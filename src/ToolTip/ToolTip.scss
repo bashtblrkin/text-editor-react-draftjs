@@ -2,11 +2,25 @@
   position: absolute;
   display: block;
   width: 300px;
-  height: 30px;
-  background-color: aliceblue;
   z-index: 10;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #1565c0;
+  }
   & input {
+    outline: none;
+    height: 30px;
     width: 100%;
     z-index: 20;
+    border: 1px solid #1565c0;
+    font-family: 'SansProRegular', 'sans-serif';
+    font-size: 14px;
+    &:focus {
+      border: 2px solid #1565c0;
+    }
   }
 }

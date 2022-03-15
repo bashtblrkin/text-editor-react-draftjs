@@ -9,8 +9,12 @@ export const getSelectionRange = () => {
 export const getSelectionCoords = (selectionRange: Range) => {
     const rangeBounds = selectionRange.getBoundingClientRect();
 
-    const offsetLeft = rangeBounds.right
-    const offsetTop = rangeBounds.top
+    if (rangeBounds.left === 0 && rangeBounds.top === 0) {
+        return {offsetLeft: 0, offsetTop: 0};
+    }
+
+    const offsetLeft = rangeBounds.left + (rangeBounds.width / 2)
+    const offsetTop = rangeBounds.top + rangeBounds.height + 10
     return {offsetLeft, offsetTop};
 };
 

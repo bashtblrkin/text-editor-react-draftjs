@@ -92,7 +92,6 @@ const ToolTip = () => {
                             <div ref={params.InputProps.ref}>
                                 <input
                                        type="text"
-                                       className={"tooltip-input"}
                                        {...params.inputProps}
                                 />
                             </div>
