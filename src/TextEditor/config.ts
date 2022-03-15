@@ -26,8 +26,7 @@ export enum InlineStyle {
   BOLD = "BOLD",
   ITALIC = "ITALIC",
   UNDERLINE = "UNDERLINE",
-  ACCENT = "ACCENT",
-  SELECTED = 'SELECTED'
+  ACCENT = "ACCENT"
 }
 
 export const BLOCK_LABELS = {
@@ -61,8 +60,5 @@ export const CUSTOM_STYLE_MAP = {
   [InlineStyle.ACCENT]: {
     backgroundColor: "#1565c0",
     color: 'white',
-  },
-  [InlineStyle.SELECTED]: {
-    border: '1px solid black',
-  },
+  }
 };
