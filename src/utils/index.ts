@@ -1,4 +1,4 @@
-import {EditorState, Entity} from "draft-js";
+import {EditorState, EntityInstance, Entity} from "draft-js";
 
 export const getSelectionRange = () => {
     const selection = window.getSelection();
@@ -104,3 +104,41 @@ export const getEntityRange = (editorState: EditorState, entityKey: Entity): ent
     return undefined;
 }
 
+export type EntityWithDopField = {
+    entityKey: string
+    blockKey: string
+    entity: EntityInstance
+    start: number
+    end: number
+}
+
+export type MyEntity = Pick<EntityWithDopField, "entityKey" | "blockKey" | "entity">
+
+export const getEntities = (editorState: EditorState, entityType = null): EntityWithDopField[] => {
+    const content = editorState.getCurrentContent();
+    const entities: EntityWithDopField[] = [];
+    content.getBlocksAsArray().forEach((block) => {
+        let selectedEntity: MyEntity | null = null;
+        block.findEntityRanges(
+            (character) => {
+                if (character.getEntity() !== null) {
+                    const entity = content.getEntity(character.getEntity());
+                    if (!entityType || (entityType && entity.getType() === entityType)) {
+                        selectedEntity = {
+                            entityKey: character.getEntity(),
+                            blockKey: block.getKey(),
+                            entity: content.getEntity(character.getEntity()),
+                        };
+                        return true;
+                    }
+                }
+                return false;
+            },
+            (start, end) => {
+                if (selectedEntity) {
+                    entities.push({...selectedEntity, start, end});
+                }
+            });
+    });
+    return entities;
+}
