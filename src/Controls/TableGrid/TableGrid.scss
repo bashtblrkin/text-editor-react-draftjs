@@ -1,0 +1,29 @@
+.table {
+  &-info {
+    margin: 10px 0px;
+    font-size: 12px;
+  }
+  &-grid {
+    margin: 10px 5px;
+    &_row {
+      display: flex;
+      width: 136px;
+      justify-content: space-between;
+      padding: 1px;
+      cursor: pointer;
+    }
+  }
+}
+
+.cell {
+  flex: 0 0 15px;
+  height: 15px;
+  &-grey {
+    border: 1px solid rgba(150, 150, 150, 1);
+    background: rgba(200, 200, 200, 0.4);
+  }
+  &-blue {
+    border: 1px solid rgba(0, 125, 250, 0.8);
+    background: rgba(0, 125, 250, 0.4);
+  }
+}

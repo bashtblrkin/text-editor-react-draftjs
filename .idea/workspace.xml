@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e7aaff8-776f-401c-a079-c5fa0004eb2a" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextEditor/TextEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextEditor/TextEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextEditor/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextEditor/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TextEditor/useEditor.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TextEditor/useEditor.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToolPanel/ToolPanel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolPanel/ToolPanel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToolPanel/ToolPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolPanel/ToolPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToolTip/ToolTip.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolTip/ToolTip.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToolTip/ToolTip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ToolTip/ToolTip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ASBC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -46,6 +57,9 @@
     <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\baturin.i\Desktop\projects\text-editor\src\Preview" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\baturin.i\Desktop\projects\text-editor\src\Link" />
     </key>
@@ -61,7 +75,8 @@
       <workItem from="1645705022156" duration="8995000" />
       <workItem from="1645715722942" duration="952000" />
       <workItem from="1646036322451" duration="21411000" />
-      <workItem from="1646122253510" duration="104360000" />
+      <workItem from="1646122253510" duration="158436000" />
+      <workItem from="1647858868972" duration="20387000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1647263925459</created>

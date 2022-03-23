@@ -52,8 +52,11 @@
     ]
   },
   "devDependencies": {
+    "@material-ui/icons": "^4.11.2",
     "@types/draft-convert": "^2.1.4",
     "@types/draft-js": "^0.11.9",
-    "draftjs-utils": "^0.10.2"
+    "@types/lodash": "^4.14.180",
+    "draftjs-utils": "^0.10.2",
+    "lodash": "^4.17.21"
   }
 }

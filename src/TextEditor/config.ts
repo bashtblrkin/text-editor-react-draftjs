@@ -20,6 +20,7 @@ export enum BlockType {
   orderList = "ordered-list-item",
   cite = "cite",
   default = "unstyled",
+  table = "table"
 }
 
 export enum InlineStyle {
@@ -49,6 +50,9 @@ export type KeyCommand = DraftEditorCommand | "accent";
 const CUSTOM_BLOCK_RENDER_MAP = Immutable.Map({
   [BlockType.cite]: {
     element: "cite",
+  },
+  [BlockType.table]: {
+    element: "div",
   }
 });
 
